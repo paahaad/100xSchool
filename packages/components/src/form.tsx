@@ -12,7 +12,7 @@ import {
   type FieldValues,
 } from "react-hook-form"
 
-import { cn } from "@lms/utils"
+import { cn } from "../../tailwind/src"
 import { Label } from "@lms/components/label"
 
 const Form = FormProvider

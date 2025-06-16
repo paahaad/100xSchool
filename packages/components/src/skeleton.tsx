@@ -1,4 +1,4 @@
-import { cn } from "@lms/utils"
+import { cn } from "../../tailwind/src"
 
 function Skeleton({
   className,

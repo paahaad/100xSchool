@@ -1,7 +1,7 @@
 import * as React from "react"
 import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react"
 
-import { cn } from "@lms/utils"
+import { cn } from "../../tailwind/src"
 import { ButtonProps, buttonVariants } from "@lms/components/button"
 
 const Pagination = ({ className, ...props }: React.ComponentProps<"nav">) => (

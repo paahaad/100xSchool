@@ -13,7 +13,7 @@
       "path": "./packages/components"
     },
     {
-      "path": "./packages/utils"
+      "path": "./packages/tailwind"
     }
   ]
 }
