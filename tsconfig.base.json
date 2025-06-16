@@ -16,6 +16,12 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["development"]
+    "customConditions": ["development"],
+    "paths": {
+      "@lms/components": ["./packages/components/src"],
+      "@lms/components/*": ["./packages/components/src/*"],
+      "@lms/utils": ["./packages/utils/src"],
+      "@lms/utils/*": ["./packages/utils/src/*"]
+    }
   }
 }

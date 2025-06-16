@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "default",
+  "rsc": false,
+  "tailwind": {
+    "config": "packages/utils/src/tailwind.config.ts",
+    "css": "packages/utils/src/global.css",
+    "baseColor": "neutral",
+    "cssVariables": true
+  },
+  "aliases": {
+    "ui": "@lms/components",
+    "components": "@lms/components/components",
+    "utils": "@lms/utils",
+    "hooks": "@lms/components/hooks"
+  }
+}
