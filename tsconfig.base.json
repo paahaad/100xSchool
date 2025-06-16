@@ -20,8 +20,8 @@
     "paths": {
       "@lms/components": ["./packages/components/src"],
       "@lms/components/*": ["./packages/components/src/*"],
-      "@lms/utils": ["./packages/utils/src"],
-      "@lms/utils/*": ["./packages/utils/src/*"]
+      "@lms/tailwind": ["./packages/tailwind/src"],
+      "@lms/tailwind/*": ["./packages/tailwind/src/*"]
     }
   }
 }
