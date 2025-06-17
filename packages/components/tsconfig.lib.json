@@ -28,5 +28,9 @@
     "eslint.config.mjs"
   ],
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"],
-  "references": []
+  "references": [
+    {
+      "path": "../tailwind/tsconfig.lib.json"
+    }
+  ]
 }

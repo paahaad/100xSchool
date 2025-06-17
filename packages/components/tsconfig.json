@@ -3,6 +3,9 @@
   "include": [],
   "references": [
     {
+      "path": "../tailwind"
+    },
+    {
       "path": "./tsconfig.lib.json"
     }
   ],

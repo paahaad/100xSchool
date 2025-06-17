@@ -3,6 +3,9 @@
   "include": [],
   "references": [
     {
+      "path": "../../packages/tailwind"
+    },
+    {
       "path": "../../packages/components"
     },
     {
