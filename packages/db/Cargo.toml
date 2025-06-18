@@ -4,5 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+sqlx = { version = "0.8", features = ["runtime-tokio", "postgres", "uuid", "time", "tls-native-tls"] }
+uuid = { version = "1.6", features = ["v4", "serde"] }
+chrono = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
