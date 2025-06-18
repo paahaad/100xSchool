@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import * as ReactDOM from 'react-dom/client';
+import { ThemeProvider } from '@lms/components/theme-provider';
 import App from './app/app';
 
 const root = ReactDOM.createRoot(
@@ -9,8 +9,13 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <StrictMode>
-    <BrowserRouter>
+    <ThemeProvider 
+      attribute="class" 
+      defaultTheme="system" 
+      enableSystem 
+      disableTransitionOnChange
+    >
       <App />
-    </BrowserRouter>
+    </ThemeProvider>
   </StrictMode>
 );

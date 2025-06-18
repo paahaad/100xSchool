@@ -1,12 +1,12 @@
 import { useState } from "react"
-import { Button } from "./ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
-import { Input } from "./ui/input"
-import { Label } from "./ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "./ui/table"
-import { Badge } from "./ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
+import { Button } from "@lms/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@lms/components/ui/card"
+import { Input } from "@lms/components/ui/input"
+import { Label } from "@lms/components/ui/label"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@lms/components/ui/select"
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@lms/components/ui/table"
+import { Badge } from "@lms/components/ui/badge"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@lms/components/ui/tabs"
 import {
   Dialog,
   DialogContent,
@@ -15,8 +15,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "./ui/dialog"
-import { Textarea } from "./ui/textarea"
+} from "@lms/components/ui/dialog"
+import { Textarea } from "@lms/components/ui/textarea"
 import { Plus, Search, Edit, Trash2, Users, BookOpen, Calendar } from "lucide-react"
 
 const courses = [
@@ -432,4 +432,4 @@ export function CourseManagement() {
       </Tabs>
     </div>
   )
-}
+} 

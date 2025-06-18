@@ -1,10 +1,8 @@
-
-
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
-import { Button } from "./ui/button"
-import { Badge } from "./ui/badge"
-import { Progress } from "./ui/progress"
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@lms/components/ui/card"
+import { Button } from "@lms/components/ui/button"
+import { Badge } from "@lms/components/ui/badge"
+import { Progress } from "@lms/components/ui/progress"
+import { Avatar, AvatarFallback, AvatarImage } from "@lms/components/ui/avatar"
 import {
   BookOpen,
   Calendar,

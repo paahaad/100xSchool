@@ -3,13 +3,13 @@
 // @ts-nocheck
 
 import { useState } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
-import { Button } from "./ui/button"
-import { Badge } from "./ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
-import { Progress } from "./ui/progress"
-import { RadioGroup, RadioGroupItem } from "./ui/radio-group"
-import { Label } from "./ui/label"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@lms/components/ui/card"
+import { Button } from "@lms/components/ui/button"
+import { Badge } from "@lms/components/ui/badge"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@lms/components/ui/tabs"
+import { Progress } from "@lms/components/ui/progress"
+import { RadioGroup, RadioGroupItem } from "@lms/components/ui/radio-group"
+import { Label } from "@lms/components/ui/label"
 import {
   Dialog,
   DialogContent,
@@ -18,7 +18,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "./ui/dialog"
+} from "@lms/components/ui/dialog"
 import { AlertCircle, Calendar, Clock, FileText, Play, CheckCircle, Trophy, BookOpen } from "lucide-react"
 
 const upcomingExams = [

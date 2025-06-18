@@ -1,11 +1,11 @@
 
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
-import { Badge } from "./ui/badge"
-import { Progress } from "./ui/progress"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select"
-import { Calendar } from "./ui/calendar"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@lms/components/ui/card"
+import { Badge } from "@lms/components/ui/badge"
+import { Progress } from "@lms/components/ui/progress"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@lms/components/ui/select"
+import { Calendar } from "@lms/components/ui/calendar"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@lms/components/ui/tabs"
 import { TrendingUp, AlertTriangle, CheckCircle, X, CalendarIcon as CalendarLucide } from "lucide-react"
 import { useState } from "react"
 

@@ -1,14 +1,14 @@
 
 
 import { useState } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
-import { Button } from "./ui/button"
-import { Badge } from "./ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
-import { Input } from "./ui/input"
-import { Label } from "./ui/label"
-import { Textarea } from "./ui/textarea"
-import { Progress } from "./ui/progress"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@lms/components/ui/card"
+import { Button } from "@lms/components/ui/button"
+import { Badge } from "@lms/components/ui/badge"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@lms/components/ui/tabs"
+import { Input } from "@lms/components/ui/input"
+import { Label } from "@lms/components/ui/label"
+import { Textarea } from "@lms/components/ui/textarea"
+import { Progress } from "@lms/components/ui/progress"
 import {
   Dialog,
   DialogContent,
@@ -17,7 +17,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "./ui/dialog"
+} from "@lms/components/ui/dialog"
 import { Calendar, CheckCircle, Clock, Upload, Download, Eye } from "lucide-react"
 
 const pendingAssignments = [
