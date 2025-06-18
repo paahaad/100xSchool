@@ -6,8 +6,15 @@ edition = "2021"
 
 [dependencies]
 axum = "0.8.4"
-serde = { version = "1.0.219", features = ["derive"] }
-tokio = { version = "1.45.1", features = ["full"] }
-
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+tower = "0.5.2"
+tower-http = { version = "0.6.2", features = ["cors"] }
+reqwest = "0.12.12"
+validator = { version = "0.20.0", features = ["derive"] }
+serde = { workspace = true }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+db = { path="../../packages/db" }
+serde_json = "1.0"

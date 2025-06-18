@@ -5,6 +5,9 @@ members = [
 	'apps/backend',
 	'packages/db',
 ]
+deafult-members=[
+	'apps/backend'
+]
 
 [profile.release]
 lto = true

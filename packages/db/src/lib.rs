@@ -7,7 +7,7 @@ use sqlx::postgres::{PgPool, PgPoolOptions};
 use tracing::info;
 use std::time::Duration;
 
-
+#[derive(Clone)]
 pub struct Db {
     pool: PgPool,
 }
