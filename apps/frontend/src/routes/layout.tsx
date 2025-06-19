@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { Outlet, useLocation, Link } from "react-router-dom"
+import { useState, useContext } from "react"
+import { Outlet, useLocation, Link, useNavigate } from "react-router-dom"
 import { AppSidebar } from "@lms/components/app-sidebar"
 import { ThemeToggle } from "@lms/components/theme-toggle"
 import {
@@ -13,10 +13,26 @@ import {
 import { Separator } from "@lms/components/ui/separator"
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@lms/components/ui/sidebar"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@lms/components/ui/select"
+import { AuthContext } from "../contexts/auth.context"
+import { authService } from "../services/auth.service"
 
 export function Layout() {
   const [userRole, setUserRole] = useState<"admin" | "teacher" | "student" | "parent">("admin")
   const location = useLocation()
+  const navigate = useNavigate()
+  const { setToken } = useContext(AuthContext)
+
+  const handleLogout = async () => {
+    try {
+      await authService.logout()
+    } catch (error) {
+      console.error('Logout error:', error)
+    } finally {
+      // Clear auth context and navigate to login
+      setToken(null)
+      navigate('/login', { replace: true })
+    }
+  }
 
   const getBreadcrumbTitle = () => {
     const path = location.pathname
@@ -32,7 +48,7 @@ export function Layout() {
 
   return (
     <SidebarProvider>
-      <AppSidebar userRole={userRole} />
+      <AppSidebar userRole={userRole} onLogout={handleLogout} />
       <SidebarInset>
         <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
           <SidebarTrigger className="-ml-1" />

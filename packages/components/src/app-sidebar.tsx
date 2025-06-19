@@ -239,9 +239,16 @@ const studentNavigation = [
 
 interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
   userRole?: "admin" | "teacher" | "student" | "parent"
+  onLogout?: () => void
 }
 
-export function AppSidebar({ userRole = "admin", ...props }: AppSidebarProps) {
+export function AppSidebar({ userRole = "admin", onLogout, ...props }: AppSidebarProps) {
+  const handleLogout = () => {
+    if (onLogout) {
+      onLogout()
+    }
+  }
+
   const getNavigation = () => {
     switch (userRole) {
       case "teacher":
@@ -365,7 +372,7 @@ export function AppSidebar({ userRole = "admin", ...props }: AppSidebarProps) {
                   Notifications
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>
+                <DropdownMenuItem onClick={handleLogout}>
                   <LogOut className="mr-2 h-4 w-4" />
                   Log out
                 </DropdownMenuItem>
