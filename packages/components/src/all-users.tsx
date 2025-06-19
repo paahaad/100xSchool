@@ -178,7 +178,6 @@ export function AllUsers() {
                 <Input
                   placeholder="Search users..."
                   value={searchTerm}
-                  // @ts-expect-error - TODO: fix this
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="pl-8"
                 />

@@ -94,8 +94,8 @@ const TableCell = React.forwardRef<
 TableCell.displayName = "TableCell"
 
 const TableCaption = React.forwardRef<
-  HTMLTableCaptionElement,
-  React.HTMLAttributes<HTMLTableCaptionElement>
+  HTMLTableSectionElement,
+  React.HTMLAttributes<HTMLTableSectionElement>
 >(({ className, ...props }, ref) => (
   <caption
     ref={ref}
